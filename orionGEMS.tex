@@ -50,6 +50,7 @@
 \newcommand{\Tco}{{$^{12}$CO}}
 \newcommand{\co}{C{$^{18}$O}}
 \newcommand{\Lsol}{L$_{\odot}$}
+\newcommand{\Vlsr}{V$_{LSR}$}
 \newcommand{\Msol}{M$_{\odot}$}
 \newcommand{\um}{$\mu$m}
 %\newcommand{\C18o}{C$^{18}$O($1\rightarrow 0$)}
@@ -92,7 +93,8 @@
 
 \begin{document}
 
-\title{The Orion Fingers:   Near-IR Adaptive Optics Imaging}
+\title{The Orion Fingers:   Near-IR Adaptive Optics Imaging of
+an Explosive Protostellar Outflow}
 
 \author{
                John Bally\altaffilmark{1},               
@@ -117,21 +119,21 @@ ISM: individual -- Orion Nebula, OMC1
 stars: formation -- }
 
 \begin{abstract}
-    We present new narrow-band \hh ,   \feii, and broad-band K$_s$ images of the 
-    Orion  OMC1 outflow  obtained with the Gemini South multi-conjugate 
-    adaptive optics (AO) system and near-infrared imager GSAOI.   These  images 
-    reach the diffraction limit of the 8-meter telescope at 2 \mum\ of about 0.05\arcsec  .
-    Comparison with previous AO-assisted observations of sub-fields with the Gemini
-    North telescope between 2007 to 2009 and ground-based observations going back
-    to 1999 enable measurements of proper motions of \hh\ and \Feii\ features.   
-    Several sub-arcsecond \hh\ features and many \Feii\
-    `fingertips' on the projected outskirts of the flow show proper motions 300 \kms\ or more.  
-    The propagation of compact  knots (`bullets') as far as 140\arcsec\ from their ejection 
-    sites through the dense OMC1 core sets a lower bound on their densities.  The 
-    density, mass, and energy constraints are  consistent with the  disruption  of dense 
-    circumstellar disks from within a few AU of massive stars during a final multi-body
-    dynamic encounter that ejected  the BN object and radio source I from the OMC1 
-    about 500 years ago.  
+We present new narrow-band \hh ,   [\feii], and broad-band K$_s$ images of the 
+Orion  OMC1 outflow  obtained with the Gemini South multi-conjugate 
+adaptive optics (AO) system and near-infrared imager GSAOI.   These  images 
+reach the diffraction limit of the 8-meter telescope at 2 \mum\ of about 0.05\arcsec  .
+Comparison with previous AO-assisted observations of sub-fields with the Gemini
+North telescope between 2007 to 2009 and ground-based observations going back
+to 1999 enable measurements of proper motions of \hh\ and \Feii\ features with 
+unprecedented precision in portions of the outflow.    Several sub-arcsecond \hh\ 
+features and many \Feii\   `fingertips' on the projected outskirts of the flow show 
+proper motions of $\sim$300 \kms.    The propagation of compact  knots (`bullets') 
+as far as 140\arcsec\ from their ejection  sites through the dense OMC1 core sets 
+a lower bound on their densities.  The density, mass, and energy constraints are  
+consistent with the  disruption  of dense  circumstellar disks within a few AU
+of massive stars during a final multi-body dynamic encounter that ejected  the BN 
+object and radio source I from the OMC1 about 500 years ago.  
  \end{abstract}
 
 
@@ -165,7 +167,7 @@ different from accretion-disk  powered  flows,  and that it  originated several 
 north of the  OMC1 hot-core.   
 
 The OMC1 outflow  contains  a complex of shocks which may indicated an explosive
-origins.     High precision astrometric measurements have shown that
+origin.     High precision astrometric measurements have shown that
 the three brightest radio-emitting stars in OMC1, sources BN, I, and possibly
 source n, have  proper motions  of 25, 15, and 26 km s$^{-1}$ 
 away from a region less than 500 AU in diameter from which they were ejected 
@@ -174,22 +176,23 @@ about  500 years ago (Rodriguez et al. 2005; Gomez et al. 2005; 2008).
 by the dynamical rearrangement of a nonhierarchical system of massive stars in 
 OMC1 which resulted in the formation of a compact, massive binary (most likely 
 source I) and the ejection of both BN,   source I, and possibly source n.  
-Proper motion measurements show that the OMC1 finger have a dynamic age
-of about 500 years \citep{Bally2011}, consistent with this scenario.   
+Proper motion measurements show that the fastest components in the 
+OMC1 fingers have a dynamic age of about 500 years \citep{Bally2011}, consistent 
+with this scenario.   
 
 On the other hand, \citet{Tan2004} proposed that the decay 
 occurred about 4,000 years ago in the Trapezium cluster located in the center of
 the Orion Nebula and that the OMC1 explosion was
 triggered by the close passage of the BN object through the OMC1 core.   Although 
 this scenario requires a highly unlikely close encounter of  BN with source I, 
-\citet{Tan2013} show that the the parameters of the Trapezium and BN are compatible with 
+\citet{Tan2012} show that the the parameters of the Trapezium and BN are compatible with 
 this scenario.
  
 Though rare, the explosive outflow morphology of the  OMC1 outflow is not unique;
 other likely examples \citep{Bally2011}.   However, Orion BN/KL is the nearest and least 
 obscured,and thus most accessible for high-resolution studies.  
-In this {\it Letter}, we present 0.05 arc second resolution images of the 
-entire OMC1 outflow in the 1.64 \um\ \Feii\ and 2.12 \um\ \hh\  narrowband filters 
+Here, we present 0.06 to 0.1 arc second resolution images of the 
+entire OMC1 outflow complex in the 1.64 \um\ \Feii\ and 2.12 \um\ \hh\  narrowband filters 
 and a broad-band K$_s$ obtained with adaptive optics (AO) on the Gemini South  8 
 meter telescope.    This data is combined with  older AO-assisted observations
 obtained on Gemini North and natural seeing-limited images acquired with a variety
@@ -200,66 +203,146 @@ of other telescope to measure new proper  motions.
 
 \subsection{Gemini South GEMS}
 
-Three 80\arcsec fields were observed in OMC1 between 30 December 2012 and
-xx February 2013 using the Gemini South adaptive optics imager GSAOI.
+The Gemini Multi-conjugate adaptive optics System (GeMS) at the Gemini South telescope
+in Cerro Pachon is the first and only sodium-based multi-Laser Guide Star (LGS) adaptive
+optics system \citep{Rigaut2014,Rigaut2012,Neichel2014,Neichel2013,dOrgeville2012}.
+GeMS works with a LGS constellation of 5-spots:  4 of the LGS spots are at the corners of a
+60\arcsec\ square, with the 5-th positioned in the center.  The Adaptive Optics (AO)  bench
+called Canopus is mounted on one of the f/16 Cassegrain ports.    Gemini South 
+Adaptive Optics Imager (GSAOI) is a “wide-field” (85\arcsec\ by 85\arcsec\ field of view) 
+camera designed to work at the diffraction limit of the 8-meter telescope in the near-infrared.
+Three 85\arcsec\  fields were observed in OMC1 between 30 December 2012 and
+28 February 2013 using GSAOI.  Observations of each field were obtained though 1\%
+bandpass narrow-band filters centered on the 1.644 $\mu$m [FeII] and 2.122 $\mu$m
+H$_2$ emission lines and the broad-band K$_s$ filter.  
+The corrected images have FWHM diameters of 0.06\arcsec\ to  0.1\arcsec , providing the 
+highest angular resolution images of the BN/KL outflow ever obtained in the near-IR. 
 
-Describe observations (dates, FOVs, etc. exposure times per pixel 
-in a Table).    Cite GEMS/GSAOI papers.  Describe reduction steps and
+Each field was imaged in each filter with a 5 point dither pattern to fill-in gaps between the 
+four 2048 by 2048 pixel arrays in GSAOI.    In the two narrow band filters, exposure times of 
+30 seconds per image were used; exposure times were 10 seconds 
+per frame were used in the broad-band filter.
+
+xxxxxx  Describe NUMBER OF EXPOSURES, and EXPTIME.  Describe reduction steps and
 difficulties.
 
-Data were processed with the Gemini pipeline.  Additional astrometric
-corrections were required.  We aligned each individual exposure with the
+Data were processed with the Gemini pipeline.  However, additional astrometric
+corrections were required.   Individual exposures were first registered to the
 \citet{Muench2002a} catalog sources to acquire a world coordinate system with
-RMS pointing error $\sim0.1$ \arcsec.  These images were then stacked.
-However, this level of accuracy was inadequate for distortion correction within
-the images, so we extracted our own catalog from the co-added, aligned images,
-and re-aligned each frame to the new, more precise, and deeper catalog.
+RMS pointing error $\sim0.1$ \arcsec .     A new catalog of relative star positions
+was generated from a preliminary aligned and co-added stack of images and used
+to derive a distortion map for GSAOI.    The individual distortion corrected images were 
+re-aligned and co-added to form the final mosaic in each filter.  
 
 \subsection{Gemini North Altair}
-We report Gemini North Altair AO imaging of several 40\arcsec\ fields obtained 
-between 2007 and 2009. 
 
-Describe Altair Observations.
+The Gemini North 8 meter telescope was used to observe the OMC1 region using the
+Altair AO system with the NIRI near-IR camera through 1\% narrow-band \Feii , \hh , and
+broad-band K$_s$ filters.    NIRI was used in a configuration which
+delivers a  40\arcsec\ field of view.  In the narrow-band filters, a dithered set of five to 10 
+30 second duration exposures were obtained.    A similar set of 10 second exposures were
+acquired in the K$_s$ filter.     In 2007, only the `\hh\  fingers' region was observed as part
+of the commissioning of the Altair AO system using the NIRI camera.   During 2008 and 2009,
+we intended to image a 3 $\times$ 4 point grid to cover the full extent of the BN/KL outflow.
+However, on 5 and 8 fields were actually observed in 2008 and 2009, respectively.    Only
+the  `\hh\  fingers'  field was observed during each of the three years.   A summary of the 
+observations is given in Table~1.   The angular resolution of the NIRI images ranges from 0.1 
+to 0.2\arcsec . 
+
+AO images  were obtained with Gemini North on MJD 54165, MJD 54753, and MJD 55138 
+between 2007 and 2009,  and Gemini South on MJD 56323. 
+In the analysis presented here, the NIRI images were registered to the final GSAOI mosaic
+using IRAF tasks GEOMAP and GEOTRAN applied to unsaturated field stars.    
+Proper motions were determined by marking  the photocenters of features on the multi-epoch
+images.     Images of the OMC1 outflow obtained with the 
+Subaru 8 meter telescope on MJD = 51484 in 1999 \citep{Kaifu2000},
+the Apache Point Observatory 3.5 meter on MJD = 53331 in 2004  \citep{Bally2011}
+are also used for analysis.    These observations span an interval of 4,839 days.   
 
 \section{Results}
 
+The 2013 epoch GSAOI images presented here reach the near-IR diffraction limit of an 
+8-meter telescope and provide sharpest views obtained thus far of the 
+entire  OMC1 BN/KL  outflow.      The image (Figure \ref{fig1}) shows dozens of \hh\ fingers 
+tipped with \Feii\  emission extending from about 30\arcsec\ to 140\arcsec\ from the OMC1 core.  
+For the analysis of dynamic ages for various features, we assume that all features originated
+from J2000 = 05:35:14.350, -05:22:28.50,  the suspected location from which the BN object 
+and radio source I  were ejected about 500 years ago  \citep{Gomez2008}.  
+The two brightest \Feii\  bow shocks  correspond to the Herbig-Haro objects 
+HH~201  and HH~210 located 60\arcsec\ northwest and  113\arcsec\  north of  OMC1
+\citep{Gull1973,MunchTaylor1974,Canto1980,AxonTaylor1984}.   
+These shocks are visible on ground-based and Hubble Space Telescope images in
+\oi  ,  H$\alpha$,  \nii\, and \sii .  However, they  only exhibit very faint  \hh\ emission
+\citep{Graham2003}, indicating that
+they lie in the mostly atomic photon-dominated region (PDR) located between the Orion
+Nebula's ionization front and the background molecular cloud.    
+The most prominent  \hh\ finger consist of  multiple \Feii\  finger-tips trailed by \hh\ wakes,  
+has an orientation of PA $\sim$ 340 to 345 \arcdeg  ,  and can be traced from
+about 50\arcsec\  to about 135\arcsec\ from the ejection center.  This wake consists of  
+at least a dozen  nested \hh\ bow shocks tipped  with \Feii\ emission regions.      
+The brighter  \Feii\  knots  corresponding to HH~205 through 209
+are associated with the tips of  a train of \hh\  wakes propagating toward position angle
+(PA) $\sim$  340 to 350\arcdeg .   These HH objects are associated with the 
+PA $\sim$ 340 to 345 \arcdeg\  finger.
 
-For this analysis, images of the OMC1 outflow obtained with the 
-Subaru 8 meter telescope on MJD = 51484 in 1999 \citep{Kaifu2000},
-the Apache Point Observatory 3.5 meter on MJD = 53331 in 2004  \citep{Bally2011}, 
-Gemini North on MJD 54165, MJD 54754, and MJD 55138 between 2007 and 2009, 
-and Gemini South on MJD 56323 are used.   These observations span an interval of
-4,839 days.   The interval between the 2007 and 2013 Gemini North and South
-near-diffraction limited observations is 2,158 days.
+More than 120 distinct wakes are visible in the 2.12 \um\  \hh\  images presented here. 
+The \hh\  wakes exhibit nearly parallel walls, large proper motions along their axes
+\citep{Bally2011}.      
+Figure \ref{fig2}  shows a median filtered version of the 2013 GSAOI mosaic.   
+This high-pass filtered image was  created by convolving the original images with a 51 pixel kernel (1\arcsec ; each pixel is   0.02\arcsec\  on a side) using IRAF function MEDIAN, and subtracting 
+the the result from the original image.   Vectors were drawn from the suspected ejection site of 
+radio sources BN and source I (the coordinates are given  above) to each \hh\ or \Feii\ fingertip.    
+The \hh emission becomes too contused within $\sim$30\arcsec\  of the suspected 
+ejection location due to the complex of multiple overlapping features.    
+The natural seeing limited 1999 epoch Subaru image
+from \citet{Kaifu2000} and the 2005 epoch image from \citet{Bally2011} were used to 
+trace additional \hh\ fingers beyond the boundaries of the GSAOI image.    The dashed vector near 
+the top marks a chain of  \hh\ knots and bow shocks with proper motions nearly orthogonal to the 
+northern fingers suspected to trace a background flow originating east of the present field.
+This flow is also seen faintly in visual wavelength images and exhibits large proper motions.
 
-Images reach near-diffraction limit of an 8-meter telescope and
-provide sharpest images yet of the spectacular OMC1 outflow.
-Figure 1 show a color rendition of the \Feii, \hh, and K$_s$
-data.
+While the fingertips tend to be faint
+or invisible in \hh , most of the the \Feii\ emission in the BN/KL outflow originates from
+the fingertips.   Dozens of  wake-tips (fingertips) are visible  in the 1.64 \um\ \Feii\ line.   
+The two cyan vectors point to the two  brightest \Feii\ features, HH~201 and 210.   
+These fingertips are very faint in \hh .   Figure \ref{fig4} shows a color version of 
+the `\hh\ fingers'  region in 2013 from GSAOI.
 
-Describe the color images and present obvious features.
-[Fe II] dominates finger tips while H2 dominates wakes. 
-
-There are at least 100 distinct wakes visible in the 2.12 \um\  \hh\ line, and dozens
-of wake-tips (fingertips) visible mostly in the 1.64 \um\ \Feii\ line.   The \hh\  wakes exhibit
-nearly parallel walls, large proper motions along their axes, and only a small amount
-of spreading.    In the northwestern part of the flow, the \hh\ wakes range in diameter  from
-2 to 8\arcsec\  ($7 \times 10^{14}$ to $3 \times 10^{15}$ cm). with limb brightened rims 
-less than 1\arcsec ($< 3 \times 10^{14}$ cm) wide.   The approximately dozen major 
-fingers in the northwest are up to 60\arcsec\   ($\sim$ 0.1 pc) long.  
+In the northwestern  part of the flow, the \hh\ wakes range in diameter  from 2 to 8\arcsec\  
+($7 \times 10^{14}$ to $3 \times 10^{15}$ cm)  with limb brightened rims 
+less than 1\arcsec ($< 3 \times 10^{14}$ cm) wide (Figure \ref{fig3}).   
+The half dozen major  finger clusters in the northwest are up to 60\arcsec\   ($\sim$ 0.1 pc) long.  
 The wakes in the inner part of the flow are narrower, tend to be shorter, and are 
 more numerous resulting is a high degree of overlap along the line-of-sight.   
-The \hh\ emission tends to disappear near the wake-tips where it is 
-replaced by \Feii\ emission.    Several compact, sub-arcsecond diameter \hh\ knots are 
-visible in the interiors of  wakes.      The \Feii\ images show trace the fingertips, many of which
-show evidence for fragmentation.   
+The \hh\ emission tends to be fainter or disappears near the wake-tips where it is 
+replaced by \Feii\ emission.     \Feii\  emission is only found near the fingertips, 
+some of which show evidence for fragmentation. 
 
 \subsection{Proper Motions of Selected Knots}
+
+Previous analyses of  multi-epoch ground-based images have shown that the overall expansion 
+pattern of the BN/KL outflow is a `Hubble flow' with the proper motions being approximately 
+proportional to the projected distance from OMC1 \citep{LeeBurton2000,Bally2011}.    
+
+\citep{Kaifu2000}
+
+Figure \ref{fig3} shows a difference
 
 Comparison of sub-fields with 2007, 2008, 2009 Gemini North NIRI images show large
 proper motions of  \Feii -dominated fingertips and slowly expanding  \hh 
 wakes (the  \hh\ fingers).  However, there are several compact, fast moving \hh\  
 knots which have sub-arc-second to arc-second diameters. 
+The most reliable proper motions were measured in the `\hh\ fingers' field where we have
+AO-assisted images from both 2013 and 2007 separated by 2,125 days.  
+Figure \ref{fig4} shows a color composite image of this field.  
+and \ref{fig6} show the differences between the  \hh\  and \Feii\  images taken in 3013 and 2007.
+
+A difference image formed by subtracting a de-distorted, intensity matched, and registered
+2013 GSAOI image from the 2007 NIRI image (Figures \ref{fig5})
+shows that the \hh\ wakes are spreading with velocities ranging from 20 to 80 \kms .
+
+
+
 
 The most prominent high-velocity compact clump (HVCC - Figure 2) exhibits a proper 
 motion of $350 \pm 20$ \kms\ and over the 6 year ($1.85 \times 10^8$ sec.)  interval
@@ -282,6 +365,15 @@ those located west of the OMC1 core range from 200 to 400 \kms\ with a pattern o
 increasing velocity with increasing distance from OMC1.   They  have dynamic
 ages consistent with ejection between 450 and 600 years ago.
 
+Comparison of HST images in [OI] and [SII] taken on MJD 50170 show that the HVCC
+is located a few arc second south of HH~207. 
+
+HH 205, 206, and 207 trace the visual counterpart of the PA $\sim$ 340 to 345\arcdeg\ finger.
+The \Feii\ counterpart of HH~207 exhibits a prompter motion of 214 \kms . 
+
+The side jet isa visual HH object with large motions.  
+
+d132-042 (Smith et al. 2005) has an \Feii\ micro-jet.    
 
 \subsection{Constraints on the ejection mechanism}
 
@@ -355,12 +447,18 @@ $L_{wake} \sim 3 \times 10^{16}$ to $3 \times 10^{17}$ cm, comparable to the len
 fingers in the north and west parts of the OMC1 outflow.
 
 While most fingertips are invisible \citet{Doi2002}  measured visual
-wavelength proper motions for those which protrude into the photon-dominated region
-behind the Orion Nebula.  
-\citet{Grosso2006} detected X-rays from the wake of  HH~210, the highest proper motion
-finger ($\sim$ 425 \kms ) in the OMC1 outflow and one of the relatively few visible at visual 
+wavelength proper motions for Herbig-Haro (HH) object which protrude into the 
+photon-dominated region behind the Orion Nebula.    Two of the brightest \Feii\ features
+correspond to HH~201 northwest of OMC1 and 210 north of OMC1.    citet{Doi2002}
+meadured proper motions of 312 to 315 \kms\ for various components of HH~201 and
+and 309 to 425 \kms\ for knots in HH~210.     \citet{Grosso2006} detected X-rays from the 
+wake of  HH~210, which is the highest proper motion finger  in the OMC1 outflow and one 
+of the relatively few visible at visual 
 wavelengths, thereby demonstrating that at least some of the fingers contain hot,  X-ray 
-emitting plasma.
+emitting plasma.   Additional HH objects are associated with the Orion fingers including
+HH 205 to 209, and HH 601 to 607  with proper motion velocities ranging 
+from  100 to 300 \kms\  \citep{Doi2002}.  All of these features have large negative radial velocties.
+For example, HH~201 has \Vlsr\ $\sim$ $-$260 to $-$284 \kms  \citep{Doi2004}.
 
 Predictions for ALMA (dust and gas column density)
 
@@ -403,6 +501,8 @@ from "bullets"
 \input{Orion_figures}
 
 \input{Orion_table1}
+
+\input{Orion_table2}
 
 
 \end{document}
