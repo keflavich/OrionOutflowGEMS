@@ -1,0 +1,408 @@
+
+%%%%%%%%%%%%%%%%%%%%
+%                                                                  % 
+%      Orion GSAOI                                    %
+%                                                                 %
+%                                                                  % 
+%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt,preprint]{aastex}
+%\documentclass{$HOME/A_WORK_DIRECTORIES/Latex/emulateapj}
+%$
+%% manuscript produces a one-column, single-spaced document:
+
+\usepackage{rotating}
+
+\citestyle{aa}
+
+\bibliographystyle{$HOME/A_WORK_DIRECTORIES/Latex/apj_w_etal}
+%$
+
+%\documentclass[preprint2]{aastex}
+%% preprint2 produces a double-column, single-spaced document:
+
+%\documentclass[manuscript]{aastex}
+%% preprint2 produces a one-column, double-spaced document:
+
+\newcommand{\vdag}{(v)^\dagger}
+\newcommand{\myemail}{skywalker@galaxy.far.far.away}
+\newcommand{\lsim}{{_{<}\atop^{\sim}}}
+\newcommand{\gsim}{{_{>}\atop^{\sim}}}
+\newcommand{\etal}{{et al.\/}}
+\newcommand{\ie}{{\em ie.\/}}
+\newcommand{\cmq}{cm{$^{-3}$}}
+\newcommand{\per}{$^{\rm{-1}}$}
+\newcommand{\tc}{{$\theta^1$~Orionis~C}}
+\newcommand{\msol}{M{$_{\odot}$}}
+\newcommand{\lsol}{L{$_{\odot}$}}
+\newcommand{\kms}{km~s{$^{-1}$}}
+\newcommand{\hii}{H~{\sc ii}}
+\newcommand{\Hii}{H~{\sc ii}}
+\newcommand{\Ha}{\mbox{H$\alpha$}}
+\newcommand{\sii}{S~{\sc ii}}
+\newcommand{\Feii}{[Fe~{\sc ii}]}
+\newcommand{\oi}{[O~{\sc i}]}
+\newcommand{\nii}{[N~{\sc ii}]}
+\newcommand{\oiii}{[O~{\sc iii}]}
+\newcommand{\mgii}{[Mg~{\sc ii}]}
+\newcommand{\tco}{{$^{13}$CO}}
+\newcommand{\CO}{{$^{12}$CO}}
+\newcommand{\Tco}{{$^{12}$CO}}
+\newcommand{\co}{C{$^{18}$O}}
+\newcommand{\Lsol}{L$_{\odot}$}
+\newcommand{\Msol}{M$_{\odot}$}
+\newcommand{\um}{$\mu$m}
+%\newcommand{\C18o}{C$^{18}$O($1\rightarrow 0$)}
+\newcommand{\Check}{{\bf ???}}
+\newcommand{\mum}{\ensuremath{\mu \mathrm{m}}}
+\newcommand{\flux}{flux density}
+\newcommand{\solar}{\ensuremath{\odot}}
+
+\newcommand{\msun}{\ensuremath{M_{\odot}}}	 	%  Msun
+\newcommand{\lsun}{\ensuremath{L_{\odot}}}			%  Lsun
+\newcommand{\lbol}{\ensuremath{L_{\mathrm{bol}}}}	%  Lbol
+\newcommand{\ks}{K\ensuremath{_{\mathrm{s}}}}		%  Ks
+\newcommand{\hh}{\ensuremath{\textrm{H}_{2}}}			%  H2
+\newcommand{\water}{H$_{2}$O}		%  H2O
+\newcommand{\feii}{\ion{Fe}{2}}		%  FeII
+\newcommand{\sqcm}{cm$^{2}$}		%  cm^2
+\newcommand{\percc}{\ensuremath{\textrm{cm}^{-3}}}
+\newcommand{\persc}{\ensuremath{\textrm{cm}^{-2}}}
+\newcommand{\persr}{\ensuremath{\textrm{sr}^{-1}}}
+\newcommand{\peryr}{\ensuremath{\textrm{yr}^{-1}}}
+\newcommand{\persec}{\ensuremath{\textrm{s}^{-1}}}
+\newcommand{\htwo}{\ensuremath{\textrm{H}_2}}    % H2
+\newcommand{\Htwo}{\ensuremath{\textrm{H}_2}}    % H2
+\newcommand{\HtwoO}{\ensuremath{\textrm{H}_2\textrm{O}}}   
+\newcommand{\htwoo}{\ensuremath{\textrm{H}_2\textrm{O}}}   
+\newcommand{\ha}{\ensuremath{\textrm{H}\alpha}}
+\newcommand{\hb}{\ensuremath{\textrm{H}\beta}}
+\newcommand{\twelveco}{\ensuremath{^{12}\textrm{CO}}}
+\newcommand{\thirteenco}{\ensuremath{^{13}\textrm{CO}}}
+\newcommand{\ceighteeno}{\ensuremath{\textrm{C}^{18}\textrm{O}}}
+
+	% End definitions
+
+
+
+\slugcomment{DRAFT: \today}
+\shorttitle{Orion GEMS GSAOI}
+\shortauthors{Bally et al.}
+
+
+\begin{document}
+
+\title{The Orion Fingers:   Near-IR Adaptive Optics Imaging}
+
+\author{
+               John Bally\altaffilmark{1},               
+               Adam Ginsburg\altaffilmark{2},
+	    }
+	    
+\affil{{$^1$}{\it{
+      Department of Astrophysical and Planetary Sciences,\\
+      University of Colorado, UCB 389, \\
+      Boulder, CO 80309}      
+      \email{John.Bally@colorado.edu}}  }
+\affil{{$^2$}{\it{
+      Department of Astrophysical and Planetary Sciences, \\
+      University of Colorado, UCB 389, \\
+      Boulder, CO 80309}      
+      \email{Adam.Ginsburg@colorado.edu}}  }
+
+
+\keywords{ISM: - molecular clouds --
+ISM: - shocks, outflows
+ISM: individual -- Orion Nebula, OMC1
+stars: formation -- }
+
+\begin{abstract}
+    We present new narrow-band \hh ,   \feii, and broad-band K$_s$ images of the 
+    Orion  OMC1 outflow  obtained with the Gemini South multi-conjugate 
+    adaptive optics (AO) system and near-infrared imager GSAOI.   These  images 
+    reach the diffraction limit of the 8-meter telescope at 2 \mum\ of about 0.05\arcsec  .
+    Comparison with previous AO-assisted observations of sub-fields with the Gemini
+    North telescope between 2007 to 2009 and ground-based observations going back
+    to 1999 enable measurements of proper motions of \hh\ and \Feii\ features.   
+    Several sub-arcsecond \hh\ features and many \Feii\
+    `fingertips' on the projected outskirts of the flow show proper motions 300 \kms\ or more.  
+    The propagation of compact  knots (`bullets') as far as 140\arcsec\ from their ejection 
+    sites through the dense OMC1 core sets a lower bound on their densities.  The 
+    density, mass, and energy constraints are  consistent with the  disruption  of dense 
+    circumstellar disks from within a few AU of massive stars during a final multi-body
+    dynamic encounter that ejected  the BN object and radio source I from the OMC1 
+    about 500 years ago.  
+ \end{abstract}
+
+
+
+\section{Introduction} 
+
+The BN/KL region behind the Orion Nebula, located at a distance of about
+414 pc \citep{Menten2007} contains a spectacular, 
+wide opening-angle, arcminute-scale  outflow emerging from the
+OMC1 cloud core.  The flow is traced by the millimeter and
+sub-millimeter emission lines of molecules 
+such as CO, CS, SO, SO$_2$, and HCN  that exhibit  broad  
+($>$ 100 km s$^{-1}$)  emission line wings 
+\citep{KwanScoville1976, WisemanHo1996, FuruyaShinnaga2009},  
+high-velocity OH, H$_2$O,  and SiO maser  emission \citep{Genzel1981,Greenhill1998}, 
+and bright shock-excited `fingers' of  \hh\   and `fingertips' of 1.64 \um\  \Feii\   emission
+\citep{AllenBurton93, Bally2011}.    The OMC1 outflow with a southeast 
+(red-shifted) - northwest (blue-shifted) axis
+contains  at least 8 M$_{\odot}$ of  accelerated gas with a median velocity of about 
+20 km s$^{-1}$.     Interferometric CO images, H$_2$O and the 18 km~s$^{-1}$ 
+SiO masers,  and dense-gas tracers such as  thermal SiO reveal a 
+smaller (8\arcsec\  long) and younger ($\sim$ 200 
+year old) outflow along a  northeast-southwest axis emerging from radio source I  
+orthogonal to the arc-minute-scale  CO outflow  \citep{BeutherNissen2008,Plambeck2009}.    
+The  momentum and kinetic   energy content of these flows is at least  
+$160$ M$_{\odot}$ km s$^{-1}$ and  $4 \times 10^{46}$  ergs  \citep{Snell1984} to  
+$4 \times 10^{47}$ ergs  \citep{KwanScoville1976}.     \citet{Zapata2009}  presented a
+CO J = 2--1 interferometric study and found a dynamic age of  about $500$ 
+years for the larger OMC1 outflow.   They noted its impulsive nature, that its  structure is 
+different from accretion-disk  powered  flows,  and that it  originated several arc-seconds 
+north of the  OMC1 hot-core.   
+
+The OMC1 outflow  contains  a complex of shocks which may indicated an explosive
+origins.     High precision astrometric measurements have shown that
+the three brightest radio-emitting stars in OMC1, sources BN, I, and possibly
+source n, have  proper motions  of 25, 15, and 26 km s$^{-1}$ 
+away from a region less than 500 AU in diameter from which they were ejected 
+about  500 years ago (Rodriguez et al. 2005; Gomez et al. 2005; 2008).   
+\citet{Bally2011} and \citet{Goddi2011} proposed that the explosion was triggered 
+by the dynamical rearrangement of a nonhierarchical system of massive stars in 
+OMC1 which resulted in the formation of a compact, massive binary (most likely 
+source I) and the ejection of both BN,   source I, and possibly source n.  
+Proper motion measurements show that the OMC1 finger have a dynamic age
+of about 500 years \citep{Bally2011}, consistent with this scenario.   
+
+On the other hand, \citet{Tan2004} proposed that the decay 
+occurred about 4,000 years ago in the Trapezium cluster located in the center of
+the Orion Nebula and that the OMC1 explosion was
+triggered by the close passage of the BN object through the OMC1 core.   Although 
+this scenario requires a highly unlikely close encounter of  BN with source I, 
+\citet{Tan2013} show that the the parameters of the Trapezium and BN are compatible with 
+this scenario.
+ 
+Though rare, the explosive outflow morphology of the  OMC1 outflow is not unique;
+other likely examples \citep{Bally2011}.   However, Orion BN/KL is the nearest and least 
+obscured,and thus most accessible for high-resolution studies.  
+In this {\it Letter}, we present 0.05 arc second resolution images of the 
+entire OMC1 outflow in the 1.64 \um\ \Feii\ and 2.12 \um\ \hh\  narrowband filters 
+and a broad-band K$_s$ obtained with adaptive optics (AO) on the Gemini South  8 
+meter telescope.    This data is combined with  older AO-assisted observations
+obtained on Gemini North and natural seeing-limited images acquired with a variety
+of other telescope to measure new proper  motions. 
+
+
+\section{Observations}
+
+\subsection{Gemini South GEMS}
+
+Three 80\arcsec fields were observed in OMC1 between 30 December 2012 and
+xx February 2013 using the Gemini South adaptive optics imager GSAOI.
+
+Describe observations (dates, FOVs, etc. exposure times per pixel 
+in a Table).    Cite GEMS/GSAOI papers.  Describe reduction steps and
+difficulties.
+
+Data were processed with the Gemini pipeline.  Additional astrometric
+corrections were required.  We aligned each individual exposure with the
+\citet{Muench2002a} catalog sources to acquire a world coordinate system with
+RMS pointing error $\sim0.1$ \arcsec.  These images were then stacked.
+However, this level of accuracy was inadequate for distortion correction within
+the images, so we extracted our own catalog from the co-added, aligned images,
+and re-aligned each frame to the new, more precise, and deeper catalog.
+
+\subsection{Gemini North Altair}
+We report Gemini North Altair AO imaging of several 40\arcsec\ fields obtained 
+between 2007 and 2009. 
+
+Describe Altair Observations.
+
+\section{Results}
+
+
+For this analysis, images of the OMC1 outflow obtained with the 
+Subaru 8 meter telescope on MJD = 51484 in 1999 \citep{Kaifu2000},
+the Apache Point Observatory 3.5 meter on MJD = 53331 in 2004  \citep{Bally2011}, 
+Gemini North on MJD 54165, MJD 54754, and MJD 55138 between 2007 and 2009, 
+and Gemini South on MJD 56323 are used.   These observations span an interval of
+4,839 days.   The interval between the 2007 and 2013 Gemini North and South
+near-diffraction limited observations is 2,158 days.
+
+Images reach near-diffraction limit of an 8-meter telescope and
+provide sharpest images yet of the spectacular OMC1 outflow.
+Figure 1 show a color rendition of the \Feii, \hh, and K$_s$
+data.
+
+Describe the color images and present obvious features.
+[Fe II] dominates finger tips while H2 dominates wakes. 
+
+There are at least 100 distinct wakes visible in the 2.12 \um\  \hh\ line, and dozens
+of wake-tips (fingertips) visible mostly in the 1.64 \um\ \Feii\ line.   The \hh\  wakes exhibit
+nearly parallel walls, large proper motions along their axes, and only a small amount
+of spreading.    In the northwestern part of the flow, the \hh\ wakes range in diameter  from
+2 to 8\arcsec\  ($7 \times 10^{14}$ to $3 \times 10^{15}$ cm). with limb brightened rims 
+less than 1\arcsec ($< 3 \times 10^{14}$ cm) wide.   The approximately dozen major 
+fingers in the northwest are up to 60\arcsec\   ($\sim$ 0.1 pc) long.  
+The wakes in the inner part of the flow are narrower, tend to be shorter, and are 
+more numerous resulting is a high degree of overlap along the line-of-sight.   
+The \hh\ emission tends to disappear near the wake-tips where it is 
+replaced by \Feii\ emission.    Several compact, sub-arcsecond diameter \hh\ knots are 
+visible in the interiors of  wakes.      The \Feii\ images show trace the fingertips, many of which
+show evidence for fragmentation.   
+
+\subsection{Proper Motions of Selected Knots}
+
+Comparison of sub-fields with 2007, 2008, 2009 Gemini North NIRI images show large
+proper motions of  \Feii -dominated fingertips and slowly expanding  \hh 
+wakes (the  \hh\ fingers).  However, there are several compact, fast moving \hh\  
+knots which have sub-arc-second to arc-second diameters. 
+
+The most prominent high-velocity compact clump (HVCC - Figure 2) exhibits a proper 
+motion of $350 \pm 20$ \kms\ and over the 6 year ($1.85 \times 10^8$ sec.)  interval
+between the Gemini North and South images in 2007 and 2013.  This HVCC 
+is located at projected  distance of 100\arcsec\ from source I and 97\arcsec\ from 
+the suspected location of the dynamic ejection of source I and BN about 500 years ago.
+Assuming no deceleration, the dynamic age of this knot is 
+$t_{dyn} = d / V \approx  350 \pm 30$ years.   
+
+This HVCC  has undergone considerable  transverse spreading over the past 6 years 
+indicating that it may be experiencing photometric variations or  significant deceleration.    
+Several less-prominent HVCCs exhibit motions of 200 - 300 \kms . 
+Measured motions of a sample (subset) of fingertips, \hh\  wakes, and compact, fast
+knots are given  in Table 1.    
+
+While the \hh\ fingers show fast $>$ 100 km/s) forward motion, 
+they spread at less than  50 \kms\  orthogonal to their orientation, consistent with their
+large length-to-width ratios.   The proper motions of the northwestern fingertips as well as
+those located west of the OMC1 core range from 200 to 400 \kms\ with a pattern of
+increasing velocity with increasing distance from OMC1.   They  have dynamic
+ages consistent with ejection between 450 and 600 years ago.
+
+
+\subsection{Constraints on the ejection mechanism}
+
+Assuming the ejection occurred $\sim500$ years ago at approximately the
+location of the BN/KL infrared nebula, the most distant knots to the northwest provide 
+constraints on the ejecta properties.  These knots have traveled
+$\sim0.28$ pc in projection in $\sim500$ years.  Thus,  the time-averaged 
+velocities must be greater than   $\sim550$ \kms.   For and explosive origin, 
+the fingertips proper motions should decrease linearly with decreasing distance 
+from the launch region.   The northern and northwestern \Feii\ fingertips show motions
+of $\sim 400$ \kms  .   While a few \hh\ features have proper motions between 300
+and 350 \kms , most show lower velocities, especially closer to the OMC1 core.   
+Because the faster motions are at least 20\% slower than expected for a 500 
+year-old explosion,   the ejecta may have suffered some deceleration.   
+
+Several dozen \Feii\ knots  and HVCCs seen in  \hh\  have diameters
+of about  1 \arcsec\ ($\sim400$ AU) or less and are located more than 
+100\arcsec\ from their ejection site.    Such clumps could have been powered by a 
+faster wind that had experienced instabilities causing it to break-up into a multitude of
+finger-shaped protrusions \cite{McCaughrean_MacLow1997}.    Rayleigh-Taylor
+instabilities can produce fingers of fast ejecta surrounded by slower clumps of dense 
+gas if the wind velocity increases with time on a time scale shorter than the mean
+crossing time,  or if the wind runs into a stationary medium with a density profile 
+which decreases faster than $r^{-2}$.   However, neither an accelerating wind, nor
+a wind that runs down a steep density gradient would naturally explain the
+approximately Hubble-flow type behavior with $V_{max}$ increasing linearly with
+increasing projected distance from the source that is exhibited by the fasted ejecta 
+\citep{Bally2011}.   Nor do wind models easily form compact clumps near the fingertips.
+
+Alternatively, the wakes and fingers may be driven by compact,  high-density ejecta
+(bullets or HVCCs) originating within a few AU of the massive stars in OMC1.   
+In this  model, momentum conservation sets a minimum constraint
+on the ejecta density because they have move through the dense gas in the Orion
+molecular cloud.     Momentum conservation indicates that such knots must be denser 
+than the environment into which they are moving.  A spherical clump 170 AU
+in diameter that moved more than 0.2 pc into a medium with density 
+$n(H_2) = 10^4$ \percc\ must have an \hh\  density  $>  10^6$ \percc\ in order
+to preserves at least half of its initial ejection velocity.  If the clump is expanding
+with an internal sound speed $c_s$, the Mach angle is given my $M \sim c_s/ 2 V$.
+Using the observed sized of compact \Feii\ and \hh\ knots and a distance of
+greater than 0.2 pc from the ejection site implies $c_s < 0.6$ \kms .   A 170 AU diameter
+sphere with density $>  10^6$ \percc\ has a mass $> 10^{29}$ grams. 
+
+The  properties of the \hh\  wakes provide constrains on the density of the ambient 
+medium into which the suspected HVCCs are moving.   The wakes have widths that are 
+an order-of-magnitude wider than the HVCCs and \Feii\  fingertips (2\arcsec\ to 10\arcsec\ 
+with most being near the lower-end of this range).   The formation of such wide wakes requires 
+that the post-shock layer forming between the forward shocks and a high-velocity,  dense 
+clump  (or working surface of a jet) have a cooling length larger than the clump diameter or 
+jet \citep{Blondin1990}.      The post-shock temperature immediately behind a shock is 
+given by $T_{ps} = 3 \mu V_s^2/ 16 k$ where $V_s \sim $ 300 to 500 \kms\  is the forward 
+shock speed.  The cooling distance is then given by $d_{cool} = V_s t_{cool} / 4$
+$= 9 \mu V_s^3 / 64 n_0 \Lambda (T_{ps})$ where $\mu$ is the mean molecular weight of
+the pre-shocked gas particles and $\Lambda (T_{ps})$ is the cooling function
+\citep{Blondin1990}.    Numerical studies of the cooling function give
+$d_{cool} \approx 4.5 \times 10^{16} V_{100}^{4.0} / n_0$  where $V_{100}$ is the
+shock velocity in units of 100 \kms\ and $n_0$ is the pre-shock particle density.   
+Modern numerical calculations give 
+$d_{cool} \approx 5.5 \times 10^{17} V_{100}^{4.4} / n_0$  for $80$ \kms\
+$< V_s <$ 1,200 \kms\ \citep{Draine2011}.  Thus, a $V_s$ = 300 \kms\ shock
+moving into a density $n_0 = 10^4$ \cmq\ has a cooling length 
+$L_{cool} \sim 7 \times 10^{15}$ cm (470 AU).  Thus, for densities between $10^3$ and
+$10^4$, cooling lengths will correspond to 1.1  to 11\arcsec\ in the frame of the shock 
+at the distance of Orion, larger than the HVCCs and \Feii\  knots.
+
+For a very dense HVCCs, the hot ($\sim$ 6 MK) plasma will squirt sideways to produce a wide
+bow-shaped wake.   The sideway expansion into the surrounding medium drives a slower
+($V_{side} < $ 50 \kms ) shock where the observed \hh\ emission in the wakes is produced.
+In the OMC1 rest frame the 30 to 300 year cooling time corresponds to a wake-length 
+$L_{wake} \sim 3 \times 10^{16}$ to $3 \times 10^{17}$ cm, comparable to the lengths of
+fingers in the north and west parts of the OMC1 outflow.
+
+While most fingertips are invisible \citet{Doi2002}  measured visual
+wavelength proper motions for those which protrude into the photon-dominated region
+behind the Orion Nebula.  
+\citet{Grosso2006} detected X-rays from the wake of  HH~210, the highest proper motion
+finger ($\sim$ 425 \kms ) in the OMC1 outflow and one of the relatively few visible at visual 
+wavelengths, thereby demonstrating that at least some of the fingers contain hot,  X-ray 
+emitting plasma.
+
+Predictions for ALMA (dust and gas column density)
+
+Comparison of selected fingers with models from ENZO code 
+(Devin Silvia) 
+
+Is there any correlation between the complex structure of OMC1 revealed by
+SCUBA?  First impression is no .. but there is mechanical `shadowing' by the
+OMC1 ridge: fingers towards NE and SW are shorter; more resistance or more
+recent ejecta from the young SiO / H2O flow from source I?
+
+\subsection{Other YSOs in the field}
+
+The [FeII] bipolar jet, the silhouette disk.
+These YSOs (possibly other embedded ones), may be 
+impacted by phase ejecta and shocks! 
+
+\section{Conclusions}
+
+Summary of results:
+
+\begin{itemize}
+
+\item Compact high-density knots may be located at
+finger tips (from propagation constraint).
+
+\item Some have reverse shocks that light-them up in H2 despite
+V > 200 km/s => independent constraint on density.
+
+\item Predict that ALMA will see CO wakes, and detect 
+compact knots of hot gas (SiO? HCO+?, high-J CO?)
+from "bullets"
+\end{itemize}
+
+
+
+\bibliographystyle{apj_w_etal}
+\bibliography{Orion}
+
+\input{Orion_figures}
+
+\input{Orion_table1}
+
+
+\end{document}
