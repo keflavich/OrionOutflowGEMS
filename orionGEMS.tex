@@ -3,7 +3,8 @@
 %                                                                  % 
 %      Orion GSAOI                                    %
 %                                                                 %
-%                                                                  % 
+% Version controlled at :
+% https://github.com/keflavich/OrionOutflowGEMS
 %%%%%%%%%%%%%%%%%%%%
 
 \documentclass[12pt,preprint]{aastex}
@@ -15,7 +16,6 @@
 
 \citestyle{aa}
 
-\bibliographystyle{$HOME/A_WORK_DIRECTORIES/Latex/apj_w_etal}
 %$
 
 %\documentclass[preprint2]{aastex}
@@ -107,10 +107,12 @@ an Explosive Protostellar Outflow}
       Boulder, CO 80309}      
       \email{John.Bally@colorado.edu}}  }
 \affil{{$^2$}{\it{
-      Department of Astrophysical and Planetary Sciences, \\
-      University of Colorado, UCB 389, \\
-      Boulder, CO 80309}      
-      \email{Adam.Ginsburg@colorado.edu}}  }
+ESO Headquarters
+Karl-Schwarzschild-Str. 2
+85748 Garching bei München
+Germany
+}      
+      \email{Adam.Ginsburg@eso.org}}  }
 
 
 \keywords{ISM: - molecular clouds --
@@ -134,7 +136,14 @@ a lower bound on their densities.  The density, mass, and energy constraints are
 consistent with the  disruption  of dense  circumstellar disks within a few AU
 of massive stars during a final multi-body dynamic encounter that ejected  the BN 
 object and radio source I from the OMC1 about 500 years ago.  
- \end{abstract}
+
+Orion is frequently, and appropriately, used as a template for understanding
+other massive star forming regions.  These new data provide excellent evidence
+for shock-heated, megaKelvin gas generating \hh\ emission in interaction
+regions with a molecular cloud.  Such interaction zones are likely to be a
+common feature in high-mass-star forming regions and will likely dominated the
+\hh\ emission from such regions.
+\end{abstract}
 
 
 
@@ -223,8 +232,13 @@ four 2048 by 2048 pixel arrays in GSAOI.    In the two narrow band filters, expo
 30 seconds per image were used; exposure times were 10 seconds 
 per frame were used in the broad-band filter.
 
-xxxxxx  Describe NUMBER OF EXPOSURES, and EXPTIME.  Describe reduction steps and
-difficulties.
+%xxxxxx  Describe NUMBER OF EXPOSURES, and EXPTIME.  Describe reduction steps and
+%difficulties.
+
+Exposure times were 43.4 seconds per exposure for \hh, 43.0 for [Fe II], and
+15.0 for Ks.  10 exposures were taken in each filter for a total of 430s
+on-source in the narrow-band filters and 150s in the continuum filter.
+
 
 Data were processed with the Gemini pipeline.  However, additional astrometric
 corrections were required.   Individual exposures were first registered to the
@@ -322,7 +336,7 @@ some of which show evidence for fragmentation.
 
 Previous analyses of  multi-epoch ground-based images have shown that the overall expansion 
 pattern of the BN/KL outflow is a `Hubble flow' with the proper motions being approximately 
-proportional to the projected distance from OMC1 \citep{LeeBurton2000,Bally2011}.    
+proportional to the projected distance from OMC1 \citep{JonesWalker1985,LeeBurton2000,Bally2011}.    
 
 \citep{Kaifu2000}
 
@@ -461,6 +475,7 @@ from  100 to 300 \kms\  \citep{Doi2002}.  All of these features have large negat
 For example, HH~201 has \Vlsr\ $\sim$ $-$260 to $-$284 \kms  \citep{Doi2004}.
 
 Predictions for ALMA (dust and gas column density)
+% Maybe we can leave this out now; ALMA data will be coming so soon...
 
 Comparison of selected fingers with models from ENZO code 
 (Devin Silvia) 
@@ -475,6 +490,8 @@ recent ejecta from the young SiO / H2O flow from source I?
 The [FeII] bipolar jet, the silhouette disk.
 These YSOs (possibly other embedded ones), may be 
 impacted by phase ejecta and shocks! 
+
+V* V2270 Ori (05 35 15.3937	 -05 21 14.112) is driving a bipolar [Fe II] jet.
 
 \section{Conclusions}
 
@@ -499,6 +516,7 @@ from "bullets"
 \bibliography{Orion}
 
 \input{Orion_figures}
+% http://i.imgur.com/FwquUQk.png
 
 \input{Orion_table1}
 
