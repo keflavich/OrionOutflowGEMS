@@ -15,4 +15,5 @@ orionGEMS:
 	${LATEX} orionGEMS.tex
 	${BIBTEX} orionGEMS
 	${LATEX} orionGEMS.tex
+	gs -dSAFER -dBATCH -dNOPAUSE  -sDEVICE=pdfwrite -sOutputFile=OrionGEMS_small.pdf orionGEMS.pdf
 
